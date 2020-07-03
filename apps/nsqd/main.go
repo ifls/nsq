@@ -23,6 +23,7 @@ type program struct {
 	nsqd *nsqd.NSQD
 }
 
+//主函数
 func main() {
 	prg := &program{}
 	if err := svc.Run(prg, syscall.SIGINT, syscall.SIGTERM); err != nil {
